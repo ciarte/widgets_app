@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class AnimatedScreen extends StatelessWidget {
-  static const name = 'animated_screen';
-  const AnimatedScreen({super.key});
+class SnackbarScreen extends StatelessWidget {
+  static const name = 'snackbar_screen';
+  const SnackbarScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

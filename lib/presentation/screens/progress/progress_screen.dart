@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class AnimatedScreen extends StatelessWidget {
-  static const name = 'animated_screen';
-  const AnimatedScreen({super.key});
+class ProgressScreen extends StatelessWidget {
+  static const name = 'progress_screen';
+  const ProgressScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
