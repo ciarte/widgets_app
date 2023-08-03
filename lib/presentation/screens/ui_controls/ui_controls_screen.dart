@@ -41,20 +41,21 @@ class _UiControlsViewState extends State<_UiControlsView> {
             isDeveloper = !isDeveloper;
           }),
         ),
-        RadioListTile(
-          title: const Text('By Car'),
-          subtitle: const Text('Viajar en auto'),
-          value: Transportation.car,
-          groupValue: selectedTransportation,
-          onChanged: (value) => setState(() {
-            selectedTransportation = Transportation.car;
-          }),
-        ),
+
         ExpansionTile(
           title: const Text('Vehiculo de transporte'),
           subtitle: Text('$selectedTransportation'),
           initiallyExpanded: false,
           children: [
+            RadioListTile(
+              title: const Text('By Car'),
+              subtitle: const Text('Viajar en auto'),
+              value: Transportation.car,
+              groupValue: selectedTransportation,
+              onChanged: (value) => setState(() {
+                selectedTransportation = Transportation.car;
+              }),
+            ),
             RadioListTile(
               title: const Text('By Plane'),
               subtitle: const Text('Viajar en avion'),
